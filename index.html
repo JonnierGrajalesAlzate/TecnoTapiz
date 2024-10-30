@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>TecnoTapiz</title>
-    </head>
+</head>
 <body>
     <nav>
         <input type="checkbox" id="check">
@@ -19,17 +19,16 @@
             <img src="./img/logotipo.png" alt="" class="logo">
         </a>
         <ul>
-            <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="./Acerca.html">Nosotros</a></li>
-            <li><a href="./administrador.html">Admin</a></li>
             <div class="dropdown">
                 <label>Materiales</label>
                 <div class="dropdown-content">
-                <a href="#">Material1</a>
-                <a href="#">Material2</a>
-                <a href="#">Material3</a>
+                    <a href="#" onclick="mostrarMensaje('Cuero')">Cuero</a>
+                    <a href="#" onclick="mostrarMensaje('Gamuza')">Gamuza</a>
+                    <a href="#" onclick="mostrarMensaje('Tela')">Tela</a>
                 </div>
-              </div>
+            </div>
+            <li class="active"><a href="#nosotros">Nosotros</a></li> 
+            <li><a href="./iniciarsesion.html">Iniciar Sesión</a></li>
         </ul>
     </nav>
     
@@ -39,7 +38,7 @@
                 <img src="./img/imagen2svg.svg" alt="ImagenSofa">
             </div>
             <div class="informacionBasica">
-                <h1>Bienvenidos</h1>
+                <h1>Bienvenido</h1>
                 <h2>Tu visión, nuestro arte en cada detalle</h2>
                 <p>Bienvenido a TecnoTapiz, tu tienda emergente de decoración para el hogar. Nos especializamos en ofrecer piezas únicas y modernas para transformar tu espacio en un ambiente acogedor y elegante. Con una pasión por el diseño, nuestro objetivo es brindarte productos de calidad que reflejen tu estilo y personalidad, creando espacios que te hagan sentir en casa.</p>
             </div>
@@ -72,11 +71,94 @@
                     <a href="./productos.html" class="boton">Ver más</a>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
+    <div class="padre" id="nosotros">
+    <div class="contenedor">
+        <div class="contenido1">
+            <h2>Nosotros</h2>
+            <p>
+                En TecnoTapiz, nos inspiramos en las últimas tendencias de decoración para ofrecerte una selección exclusiva de 
+                productos que se adaptan a diversos estilos y gustos. Nuestro compromiso es proporcionarte soluciones creativas y 
+                funcionales para embellecer cada rincón de tu hogar de manera única y original.
+            </p>
+            <p>
+                Es una microempresa con más de 30 años de experiencia en la creación y reparación de muebles tapizados. Desde sus inicios, 
+                se ha destacado por ofrecer un servicio artesanal y personalizado, adaptándose a las necesidades de cada cliente. A lo largo 
+                de estas tres décadas, la empresa ha evolucionado para mantenerse a la moda en técnicas y materiales de tapicería, sin perder su enfoque en la calidad y la atención al detalle. 
+            </p>
+            <h2>Preguntas frecuentes</h2>
 
-    <footer>
-        <h1>TecnoTapíz</h1>
-    </footer>
+            <ul>
+                <li><b>¿Cuánto tarda el proceso de tapizado?</b>
+                    <hr>El tiempo depende del tipo y la cantidad de muebles. En promedio, los proyectos pueden tardar entre 1 y 3 semanas, pero proporcionamos un 
+                    tiempo estimado más preciso después de evaluar el trabajo. 
+                </li>
+
+                <li><b>¿Cómo puedo solicitar un presupuesto?</b>
+                    <hr>Puedes contactarnos a través de nuestro sitio web, por teléfono o visitando nuestro taller. Es recomendable que nos envíes fotos del mueble para 
+                    que podamos brindarte una cotización aproximada.
+                </li>
+
+                <li><b>¿Ofrecen garantía sobre los trabajos realizados?</b>
+                    <hr>Sí, ofrecemos una garantía de 6 meses sobre defectos de fabricación o problemas en los materiales utilizados, para asegurarte un trabajo de calidad.
+                </li>
+            </ul>
+        </div>
+        
+        <div class="imagen">
+            <img src="./img/conocenos1.PNG" alt="">
+        </div>
+    </div>
+    <div class="contenedor2">
+        <div class="imagen">
+            <img src="./img/mision.PNG" alt="">
+        </div>
+        <div class="contenido">
+            <h2 class="infor">Misión</h2> 
+            <p class="parrafo1">Nuestra misión como microempresa es ofrecer muy buen servicio, dar siempre soluciones de tapizado de 
+                nuestros trabajos de alta calidad, durabilidad de nuestros productos. Nos comprometemos a brindarle a cada cliente un servicio personalizado,
+                adaptándonos a las necesidades y gustos de nuestros clientes, utilizando técnicas innovadoras y materiales de primera calidad, buscando mejorar 
+                la comodidad y estética de los entornos de nuestros clientes, aumentando un impacto positivo de la generación de empleo y la responsabilidad. 
+            </p>  
+            <h2 class="infor">Visión</h2>
+            <p class="parrafo1">Nuestra visión es ser una microempresa reconocida más que todo por su calidad y creatividad de innovar y restauración de muebles tapizados.
+                Queremos que nos destaquen en el mercado como una opción confiable y fácil de acceder, ofreciendo nuestros productos duraderos que mejoren los espacios de nuestros 
+                clientes y contribuyan al desarrollo económico de nuestra comunidad.
+            </p> 
+        </div>
+    </div>
+    </div>
+     
+    <footer class="footer">
+        <div class="reci">
+            <div class="text">
+                <h6>TecnoTapíz</h6>
+                <p>I.E Santa Elena.</p>
+            </div>
+            <div class="cont1">
+                <h6>Gmail de contacto</h6>
+                <ul class="email">
+                    <li>tecnotapiz444@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="cont2">
+                <h6>Redes sociales</h6>
+                <ul class="redes">
+                    <li><a class="tiktok" href="#"><i class="fa fa-tiktok"></i></a></li>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
