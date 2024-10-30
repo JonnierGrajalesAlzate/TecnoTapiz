@@ -28,3 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+    
+    if (storedUser && storedUser.name) {
+      document.querySelector('.informacion h1').textContent = `Bienvenido ${storedUser.name}`;
+    }
+  });

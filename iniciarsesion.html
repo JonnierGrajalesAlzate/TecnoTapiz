@@ -4,37 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/iniciarsesion.css" />
   <title>administrador-TecnoTapíz</title>
 </head>
 <body>
     <nav> <ul class="menu-horizontal">
-        <li><a href="./index.html" id="selector">Regresar</a></li>
+        <li>
+          <a href="./index.html" class="selector">Inicio</a></li>
+          <a href="./productos.html" class="selector">Catálogo</a></li>
+          <a href="./creacion.html" class="selector">Crear</a></li>
+          <a href="./reforma.html" class="selector">Remodelar</a></li>
+          <a href="#" id="parado">Login</a></li>
     </ul> </nav>
-  <div class="container">
-    <div class="login">
-      <div class="login__content">
-        <img class="login__img" src="./img/imagensvg.svg" alt="Login image" />
-
-        <form class="login__form">
-          <div>
-            <h1 class="login__title">
-              <span>Bienvenido</span> Administrador
-            </h1>
-
-            <p class="login__description">
-              Inicia sesión para continuar.
-            </p>
-          </div>
-
-          <div>
+    <div class="container">
+      <div class="login">
+        <div class="login__content">
+          <img class="login__img" src="./img/imagensvg.svg" alt="Login image" />
+    
+          <form class="login__form" id="login-form">
+            <div>
+              <h1 class="login__title">
+                <span>Bienve</span>nido
+              </h1>
+              <p class="login__description">
+                Inicia sesión para continuar.
+              </p>
+            </div>
+    
             <div class="login__inputs">
               <div>
                 <label for="email" class="login__label">Correo electrónico</label>
                 <input class="login__input" type="email" id="email" placeholder="Ingresa tu correo electrónico" required />
               </div>
-
               <div>
                 <label for="password" class="login__label">Contraseña</label>
                 <div class="login__box">
@@ -43,25 +46,43 @@
                 </div>
               </div>
             </div>
-
-            <div class="login__check">
-              <label class="login__check-label" for="check">
-                <input class="login__check-input" type="checkbox" id="check" />
-                <i class="ri-check-line login__check-icon"></i>
-                Recordar ingreso
-              </label>
-            </div>
-          </div>
-
-          <div>
+    
             <div class="login__buttons">
-              <button class="login__button">Ingresar</button>
+              <button type="submit" class="login__button">Ingresar</button>
+              <button type="button" class="login__button-ghost" id="register-btn">Regístrate</button>
             </div>
-          </div>
-        </form>
+          </form>
+    
+          <!-- Formulario de Registro -->
+          <form class="login__form" id="register-form" style="display: none;">
+            <div>
+              <h1 class="login__title"><span>Regístrate</span></h1>
+            </div>
+    
+            <div class="login__inputs">
+              <div>
+                <label for="register-name" class="login__label">Nombre</label>
+                <input class="login__input" type="text" id="register-name" placeholder="Ingresa tu nombre" required />
+              </div>
+              <div>
+                <label for="register-email" class="login__label">Correo electrónico</label>
+                <input class="login__input" type="email" id="register-email" placeholder="Ingresa tu correo electrónico" required />
+              </div>
+              <div>
+                <label for="register-password" class="login__label">Contraseña</label>
+                <input class="login__input" type="password" id="register-password" placeholder="Ingresa tu contraseña" required />
+              </div>
+            </div>
+    
+            <div class="login__buttons">
+              <button type="button" class="login__button" id="save-register">Guardar</button>
+              <button type="button" class="login__button-ghost" id="cancel-register">Cancelar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
+    
 
   <script src="./js/iniciarsesion.js"></script>
 </body>

@@ -1,6 +1,6 @@
 /* General */
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(229, 226, 226);
@@ -13,46 +13,59 @@ body {
     color: #444;
   }
   
-  /* Navegación */
-  nav {
-    background-color: rgb(149, 149, 149);
-    padding: 20px;
-  }
-  
-  .menu-horizontal {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-horizontal a {
-    color: #fff;
+nav{ 
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  color: rgb(149, 149, 149);
+  width: 100%;
+  height: 60px;
+}
+
+
+.menu-horizontal{ 
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  height: 60px;
+  width: 95%;
+  list-style: none;
+
+}
+
+.menu-horizontal > li a{
+    display: block;
     text-decoration: none;
-    padding: 8px;
-  }
-  
-  #selector:hover, #ver-carrito:hover {
-    color: white;
-  }
-  
-  
-  #selector{
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    transition: .5s;
-  }
-  
-  #selector:hover{ 
-        background: #434343;
-        color:wheat;
-  }
+    float: left;
+}
+
+.selector{
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.selector:hover{ 
+      background: #434343;
+      color:wheat;
+}
+
+#parado{
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  border-bottom: 3px solid black;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: .5s;
+}
   
   
   /* Estilo del Icono de Carrito */

@@ -23,6 +23,7 @@ nav{
   .menu-horizontal{ 
       display:flex;
       align-items: center;
+      justify-content: flex-end;
     height: 60px;
     width: 100%;
     list-style: none;
@@ -35,7 +36,7 @@ nav{
       float: left;
   }
   
-  #selector{
+  .selector{
     margin-left: 15px;
     text-decoration: none;
     color: black;
@@ -46,9 +47,21 @@ nav{
     transition: .5s;
   }
   
-  #selector:hover{ 
+  .selector:hover{ 
         background: #434343;
         color:wheat;
+  }
+
+  #parado{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border-bottom: 3px solid black;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: .5s;
   }
 
 .container {
@@ -111,7 +124,7 @@ ul {
     border: none;
     background: none;
     outline: 0;
-    color: black;
+    color: wheat;
     border-bottom: 1px solid white;
 }
 
@@ -158,4 +171,33 @@ ul {
     .contact-info p {
         text-align: left;
     }
+}
+
+.contact-form form select {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: wheat;
+    border-bottom: 1px solid white;
+    appearance: none;
+    background-color: #222;
+}
+
+.contact-form form select:hover,
+.contact-form form select:focus {
+    border-bottom: 1px solid wheat;
+    background: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form form select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }

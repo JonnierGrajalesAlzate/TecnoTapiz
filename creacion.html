@@ -13,7 +13,12 @@
     </head>
 <body>
     <nav> <ul class="menu-horizontal">
-        <li><a href="./index.html" id="selector">Regresar</a></li>
+        <li>
+          <a href="./index.html" class="selector">Inicio</a></li>
+          <a href="./productos.html" class="selector">Catálogo</a></li>
+          <a href="#" id="parado">Crear</a></li>
+          <a href="./reforma.html" class="selector">Remodelar</a></li> 
+          <a href="./iniciarsesion.html" class="selector">Login</a>
     </ul> </nav>
     
     <div class="content">
@@ -22,15 +27,38 @@
 
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
-                <h3>Contáctanos</h3>
+                <h3>Formulario para crear tu mueble soñado</h3>
                 <form action="">
                     <p>
-                        <label>Nombre Completo</label>
-                        <input type="text" name="fullname">
+                        <label>Tipo de mueble</label>
+                        <select name="tipo_mueble">
+                            <option value="sofa">Sofá</option>
+                            <option value="sofa-cama">Sofá Cama</option>
+                            <option value="sofa-chaise">Sofa Chaise Longue</option>
+                            <option value="sofa-rinconero">Sofa rinconero</option>
+                            <option value="sofa-almacenaje">Sofa con alamcenaje</option>
+                            <option value="sillón">Sillón</option>
+                        </select>
                     </p>
                     <p>
-                        <label>Correo Electrónico</label>
-                        <input type="email" name="email">
+                        <label>Material del mueble</label>
+                        <select name="material_mueble">
+                            <option value="cuero">Cuero</option>
+                            <option value="gamuza">Gamuza</option>
+                            <option value="tela">Tela</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Tamaño del mueble</label>
+                        <select name="tamano_mueble">
+                            <option value="pequeño">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Color del mueble</label>
+                        <input type="color" name="text">
                     </p>
                     <p>
                         <label>Número celular</label>
@@ -47,10 +75,6 @@
                     <p>
                         <label>Hora Cita</label>
                         <input type="time" id="hora-cita" name="hora-cita" required>
-                    </p>
-                    <p class="block">
-                       <label>Describa detalladamente como quiere su nuevo diseño.</label> 
-                        <textarea name="message" rows="3"></textarea>
                     </p>
                     <p class="block">
                         <button id="enviarBtn">

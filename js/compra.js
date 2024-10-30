@@ -8,7 +8,10 @@ function cargarResumenCarrito() {
         const subtotal = item.precio * item.cantidad;
         total += subtotal;
         contenedor.innerHTML += `
-            <p>${item.titulo} (x${item.cantidad}) - $${subtotal.toFixed(2)}</p>
+            <div class="producto-carrito">
+                <img src="${item.imagen}" alt="${item.titulo}" class="producto-imagen">
+                <p>${item.titulo} (x${item.cantidad}) - $${subtotal.toFixed(2)}</p>
+            </div>
         `;
     });
 
